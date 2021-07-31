@@ -1,8 +1,8 @@
 const app = getApp();
 
-Page({
+export default Page({
   data: {
-    inputValue: '',
+    inputValue: "",
   },
 
   onBlur(e) {
@@ -12,7 +12,7 @@ Page({
   },
 
   add() {
-    app.todos = app.todos.concat([
+    app.globalData.todos = app.globalData.todos.concat([
       {
         text: this.data.inputValue,
         compeleted: false,

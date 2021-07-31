@@ -1,7 +1,7 @@
 // 获取全局 app 实例
 const app = getApp();
 
-Page({
+export default Page({
   // 声明页面数据
   data: {},
   // 监听生命周期回调 onLoad
@@ -11,17 +11,18 @@ Page({
   // 监听生命周期回调 onShow
   onShow() {
     // 设置全局数据到当前页面数据
-    this.setData({ todos: app.todos });
+
+    this.setData({ todos: app.globalData.todos });
   },
   // 事件处理函数
   onTodoChanged(e) {
     // 修改全局数据
     const checkedTodos = e.detail.value;
-    app.todos = app.todos.map((todo) => ({
+    app.globalData.todos  = app.globalData.todos .map((todo) => ({
       ...todo,
       completed: checkedTodos.indexOf(todo.text) > -1,
     }));
-    this.setData({ todos: app.todos });
+    this.setData({ todos: app.globalData.todos  });
   },
 
   addTodo() {

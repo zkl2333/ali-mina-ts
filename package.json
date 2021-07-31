@@ -4,12 +4,15 @@
   "description": "Todos用来演示如何使用小程序来实现一个简单的任务管理。",
   "main": "app.js",
   "scripts": {
+    "build": "npx gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-typescript": "^7.14.5",
     "@types/gulp": "^4.0.9",
     "@types/gulp-rename": "^2.0.1",
     "@types/gulp-replace": "^1.1.0",
