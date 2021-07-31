@@ -1,0 +1,9 @@
+// 这里是 SCSS 语法的导入内容，函数、maxin 之类的
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin font {
+  font-family: "pingFang SC" "pingFang";
+}

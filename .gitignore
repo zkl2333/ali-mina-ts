@@ -1,0 +1,8 @@
+/node_modules
+/.tea
+/package-lock.json
+debug.log
+/.kaitian
+/.mini-ide
+/out
+/dist

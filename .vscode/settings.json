@@ -1,0 +1,6 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[axml]": {
+        "editor.defaultFormatter": "alipay.appx-axml-language"
+    }
+}

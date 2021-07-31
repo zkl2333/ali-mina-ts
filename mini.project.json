@@ -1,0 +1,7 @@
+{
+  "miniprogramRoot": "dist",
+  "enableAppxNg": true,
+  "axmlStrictCheck": true,
+  "component2": true,
+  "enableHMR": true
+}

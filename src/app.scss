@@ -1,0 +1,10 @@
+@import "./common.scss"; // 小程序导入
+@import "./scss/index.scss"; // scss导入
+@import "./scss/index.scss"; // scss导入
+
+page {
+  flex: 1;
+  display: flex;
+  background: #323239;
+  @include font;
+}
